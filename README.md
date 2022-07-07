@@ -35,5 +35,6 @@ deno run --allow-net --allow-write https://raw.githubusercontent.com/langwitch-t
 
 ### important notes
 
-i made it go very slowly because openai rate-limits requests. i think i started this script at around 5pm for german, and now it's 7:25pm. it has translated only 36,755 sentences during that time. so if you are impatient you should maybe start it before you go to bed and let it run overnight. dunno. up to you.
+* i made it go very slowly because openai rate-limits requests. i think i started this script at around 5pm for german, and now it's 7:25pm. it has translated only 36,755 sentences during that time. so if you are impatient you should maybe start it before you go to bed and let it run overnight. dunno. up to you.
 
+* it will be very noisy. gpt-3 is a smart little critter but it sometimes forgets how to format csv files properly or just doesn't fill out any columns with translations. i will add some post-processing scripts tmrw
