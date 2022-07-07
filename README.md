@@ -27,7 +27,7 @@ i added some sentence files in this repo if you want to use them but honestly th
 to run it, you do this – i'm going to put it on separate lines, you don't have to do the \ backtick thing
 
 ```sh
-deno run --allow-net --allow-write generate.ts \
+deno run --allow-net --allow-write https://raw.githubusercontent.com/langwitch-tools/langwitch-gpt3-translate/main/generate.ts \
 --from="en" --to="es" --lang="Spanish in the Madrid dialect, with informal slang if necessary" \
 --write-to="output.csv" --read-from="sentences.txt"
 ```
