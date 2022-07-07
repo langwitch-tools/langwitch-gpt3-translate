@@ -18,7 +18,7 @@ notice how it uses t'en instead of vous, aku mau vs saya ingin, and weißt Du, r
 
 ### what do i need to make it work
 
-you need a list of sentences you want translated. you put them in a file with each one on a new line and that's kinda it. oh wait you also need deno but luckily it's really ridiculously easy to install in one line ([this is their website](https://deno.land/manual/getting_started/installation)) and it didn't mess up any other things i had on my computer, so it has my approval.
+you need a list of sentences you want translated and you need the openai key you probably made when the greentext memes became popular. you put them in a file with each one on a new line and that's kinda it. oh wait you also need deno but luckily it's really ridiculously easy to install in one line ([this is their website](https://deno.land/manual/getting_started/installation)) and it didn't mess up any other things i had on my computer, so it has my approval.
 
 i added some sentence files in this repo if you want to use them but honestly they kinda suck. take a look at them yourself i guess.
 
@@ -27,7 +27,7 @@ i added some sentence files in this repo if you want to use them but honestly th
 to run it, you do this – i'm going to put it on separate lines, you don't have to do the \ backtick thing
 
 ```sh
-deno run --allow-net --allow-write https://raw.githubusercontent.com/langwitch-tools/langwitch-gpt3-translate/main/generate.ts \
+OPENAI_API_KEY="dksljfdjkfhsjdhjf" deno run --allow-net --allow-write https://raw.githubusercontent.com/langwitch-tools/langwitch-gpt3-translate/main/generate.ts \
 --from="en" --to="es" --lang="Spanish in the Madrid dialect, with informal slang if necessary" \
 --write-to="output.csv" --read-from="sentences.txt"
 ```
